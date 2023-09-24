@@ -16,7 +16,7 @@ const processRequest = (req, res) => {
       }
     case 'POST':
       switch (url) {
-        case '/pokemon/ditto': {
+        case '/pokemon': {
           let body = ''
           req.on('data', chunk => {
             body += chunk.toString()
